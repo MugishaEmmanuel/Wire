@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms of services and privacy policy</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png'%}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body style="font-family: 'Times New Roman', Times, serif;background-color: #FFF6FF; " >
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #DD75FF;">
+        <div class="container-fluid">
+            <img src="{% static 'images/logo.png'%}" width="10%" class="logo" style="float: left; margin-right: 10px;">
+            <h1 style="color: white; " id="wire"><b>Wire24</b></h1>   
+        </div>
+      </nav>
+      <style>
+        @media(max-width:483px){
+           img{
+            width: 30%;
+           }
+           #wire{
+            margin-right: 120px;
+           }
+           .term{
+            margin-left: 15px;
+           }
+           #user{
+            margin-left: 70px;
+            margin-top: 20px;
+           }
+        }
+        @media only screen and (min-width:483px) and(max-width:767px){
+            img{
+                width: 40%;
+            }
+            #wire{
+                margin-right: 600px;
+            }
+        }
+        @media(min-width:768px) {
+            #wire{
+                margin-right: 1000px;
+            }
+            .term{
+                margin-left: 450px;
+            }
+        }
+      </style>
+      <nav class="navbar navbar-expand-lg" style="background-color: #DD75FF;">
+        <div class="container-fluid">
+          <h2 class="term" style="color: white; "><b>Terms and Conditions</b></h2>
+        </div>
+      </nav>
+   
+      <div class="container">
+        <h3 id="user"><b><u>User Agreement</u></b></h3>
+        <p>
+            <b>Welcome to our website. By accessing or using our website, you agree to be bound by the following terms and conditions:</b>
+        </p>
+        <p>
+           <b>1: Acceptable Use:</b> You agree to use our website only for lawful purposes and in a way that does not infringe on the rights of others. This includes refraining from posting or transmitting any content that is illegal, defamatory, or offensive. You also agree to comply with all applicable laws and regulations.
+
+            Intellectual Property: All content on our website, including text, images, graphics, and logos, is the property of our company and is protected by intellectual property laws. You may not use our content without our permission. This includes copying, reproducing, modifying, or distributing our content in any way. You may, however, download and print content for personal use.
+        </p>
+        <p>
+            <b>2:User Data:</b> We collect and use user data in accordance with our Privacy Policy, which is incorporated into this User Agreement by reference. This includes information such as your name, email address, and browsing activity. We use this information to improve our website and provide you with a better user experience. We do not sell or share your information with third parties, except as required by law.
+        </p>
+        <p>
+            <b>3:Disclaimers: </b>We make no warranties or representations about the accuracy or completeness of the content on our website. We are not liable for any damages arising from the use of our website. This includes direct, indirect, incidental, or consequential damages. We also do not guarantee that our website will be error-free or uninterrupted.
+
+            Governing Law: This User Agreement is governed by the laws of [insert governing law jurisdiction]. Any dispute arising from this User Agreement will be resolved in accordance with the laws of [insert governing law jurisdiction]. You agree to submit to the exclusive jurisdiction of the courts in [insert governing law jurisdiction] for any dispute arising from this User Agreement.
+        </p>
+        <p>
+            <b>By accessing or using our website, you agree to be bound by the terms and conditions of this User Agreement. If you do not agree to these terms and conditions, please do not use our website.
+
+Thank you for using our website.</b>
+        </p>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

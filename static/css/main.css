@@ -1,0 +1,273 @@
+body{
+    background-color: rgb(156, 55, 196);
+    font-style: italic;
+}
+
+/* NAVBAR   */
+
+
+
+
+.navbar{
+  position: fixed;
+  background-color: rgb(156, 55, 196);
+}
+
+.navbar-brand{
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center; 
+}
+
+.navbar-brand img {
+  flex-shrink: 0; /* prevent the image from shrinking */
+  margin-right: 10px; /* add some space between the image and h1 tag */
+}
+.nav-link{
+  color: white;
+  font-size: 16px;
+}
+.navbar-brand h1{
+  font-size: 18px;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-nav {
+      margin-left: 700px;
+    }
+    .navbar-brand{
+        margin-left: 10px;
+    }
+  }
+
+@media (max-width:480px){
+  .navbar-brand img{
+    width: 20%;
+  }
+  .navbar-toggler{
+    margin-left:200px;
+  }
+}
+
+@media only screen and (min-width:483px) and(max-width:767px){
+  .navbar-brand img{
+    width: 15%;
+  }
+  .navbar-toggler{
+    margin-left: 460px;
+  }
+}
+  
+
+/* END NAVBAR   */
+
+/* toggle*/
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+/* endtoggle*/
+/*     END OF THE THINGS IN THE NAVBAR      */
+
+@media(max-width:767px){
+  .detail{
+    margin-left: 10px;
+  }
+}
+
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #DD75FF;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #FFB4FF;
+  box-shadow: 0 0 20px #6fc5ff50;
+}
+
+button:active {
+  background-color: #DD75FF;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+}
+
+/* SERVICES */
+
+
+.services {
+  background-color: #FFF6FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  font-size: 24px;
+  color: #999;
+}
+
+.services-box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  flex-basis: calc(33.33% - 40px);
+  margin: 0 20px 20px 0;
+  text-align: center;
+
+}
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    flex: 1 1 90%;
+  }
+}
+
+/*END SERVICES*/
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(156, 55, 196);
+  margin-top: 3rem;
+}
+
+.faq-content {
+  margin-top: 3rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 0;
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(156, 55, 196);
+  margin-bottom: 1rem;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: black;
+}
+
+@media(max-width:767px){
+  .faq {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .faq-header {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(156, 55, 196);
+    margin-top: 3rem;
+  }
+}
+/* social media*/
+
+
+#aboutus {
+  background-image: url("{% static 'images/bout.jpg' %}");
+  background-size: cover;
+  background-position: center;
+}
+
+
