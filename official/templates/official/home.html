@@ -53,31 +53,33 @@
 
           
 
-          <div style="display: flex;" id="home" >
+          <div style="display: flex; background-color: #BB9239 ;" id="home" >
             <div style=" margin-left: 20px; margin-top: 130px;" class="detail">
-              <h1 style="color: white; font-size: 2em; line-height: 1.2;">
+              <h1 style="color: white; line-height: 1.2;" class="rel">
                 <strong>Reliable&nbsp;&amp;&nbsp;Transparent</strong>
               </h1>
-              <h2 style="font-size: 1.8em; margin-left: 60px; color: white;"><strong>Financial Services</strong></h2>
-              <p style="font-size: 1em; color: gainsboro; margin-top: 23px;">Experience quick and effortless money transfers across the Globe.</p>
-              <p style="font-size: 0.8em; color: gainsboro;">Take advantage of our free transfers and benefit from the most competitive cross-border rates available.</p>
+              <h2 style=" margin-left: 60px; color: white;"><strong>Financial Services</strong></h2>
+              <p style=" color: gainsboro; margin-top: 40px;">Experience quick and effortless money transfers across the Globe.</p>
+              <p style=" color: gainsboro;">Take advantage of our free transfers and benefit from the most competitive cross-border rates available.</p>
               <a>
-              <button style="margin-top: 15px;">
-                <span>Download</span>
-              </button>
+                <button style="margin-top: 40px;">
+                  <span>Download</span>
+                </button>
               </a>
-              <a href="{% url 'faq' %}">
-              <button style="margin-left: 15px;">
-                Send Now
-             </button>
+              <a>
+                <button style="margin-left: 15px;">
+                  Send Now
+                </button>
               </a>
             </div>
+            <img src="{% static 'images/image2.png'%}" alt="Image of the world " style="width: 30%; height: auto; margin-top: 60px; margin-left: 150px;" class="g">
           </div>
+           
 
-          <div class="services" id="services" style="margin-top: 100px;">
+          <div class="services" id="services" style="margin-top: 0px;">
             <div class="title">
-              <h1> <strong> Instant Money  </strong></h1>
-              <h2>Send and receive money across the globe within minutes.</h2>
+              <h1> <strong style="color: #BB9239;"> Instant Money  </strong></h1>
+              <h2 style="color: rgb(0, 100, 0);">Send and receive money across the globe within minutes.</h2>
             </div>
             <div class="services-box">
               <div class="box">
@@ -113,135 +115,96 @@
             </div>
           </div>
           
-          <div class="container" style="margin-left: 5px;" id="aboutus">
-            <div class="text" style="color: #FFF7D6;">
-              <h1 style="margin-top: 50px;"><b>About Us</b></h1>
-              <p style="margin-top: 20px;"> Welcome to Wire24 - the leading online platform for fast, secure, and affordable financial services! From money transfers to bill payments, we offer a range of services with top priority on customer security and privacy. Our experienced professionals are dedicated to delivering innovative financial solutions with transparency and honesty. Choose us and experience our 24/7 customer service and a variety of payment methods for maximum convenience.</p>
+          <section style="background-color: #BB9239;" id="aboutus">
+            <div class="image" style="float: left; margin-right: 20px;">
+              <img src="{% static 'images/bout.jpg'%}" alt="Presson team" class="bout">
             </div>
-          </div>
+            <article style="color: white; overflow: hidden;">
+              <h1><b>About Us</b></h1>
+              <p>Welcome to Wire24 - your online platform for fast, secure, and affordable financial services. From money transfers to bill payments, we offer a wide range of services to help you manage your finances with ease. Our experienced professionals are dedicated to delivering innovative financial solutions with top priority on customer security and privacy. We use the latest technology to ensure your transactions are fast, secure, and hassle-free.</p>
+              <p>At Wire24, we believe that everyone should have access to affordable financial services. That's why we offer competitive rates and a variety of payment methods for maximum convenience. Whether you're sending money to family and friends or paying bills online, we're here to make your life easier. With our 24/7 customer service, you can always count on us to be there when you need us. Choose Wire24 and join our growing community of satisfied customers today!</p>
+ 
+            </article>
+          </section>
           
-          <!--- DELETE-->
-          <div style="background-color: #FFF6FF;" id="faq">
+          <section class="faq-section" id="faq">
+            <h1>Frequently Asked Questions</h1>
             <div class="faq">
-                <h2 class="faq-header" style="margin-top: 30px"><b>Frequently Asked Questions</b></h2>
-                <div class="faq-content">
-                  <div class="faq-item">
-                    <h3 class="faq-question">How do I create an account?</h3>
-                    <div class="faq-answer">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod aliquam ligula. Integer non ligula non lacus ultricies pharetra. Quisque elementum id nisi id aliquet.</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <h3 class="faq-question">How do I reset my password?</h3>
-                    <div class="faq-answer ">
-                      <p>Nulla efficitur, mauris id interdum suscipit, turpis ipsum pharetra tellus, at sagittis elit magna eget elit. Vivamus vel commodo lorem. Sed malesuada eros eget ante aliquam, vel consectetur justo dapibus.</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <h3 class="faq-question">What payment methods do you accept?</h3>
-                    <div class="faq-answer ">
-                      <p>Proin ut pretium tortor. Fusce eget dui eu est dapibus pharetra. Ut maximus nibh ut risus vestibulum, id eleifend velit ullamcorper. Donec quis ex enim.</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <h3 class="faq-question">How can I cancel my subscription?</h3>
-                    <div class="faq-answer">
-                      <p>Curabitur ut lorem a nulla bibendum vehicula at sit amet sem. Aliquam suscipit fringilla urna in efficitur. Sed vel tellus vehicula, vehicula tellus at, commodo nunc.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-          </div>
+              <h3>What is Wire24?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mauris id quam bibendum convallis a et nibh.</p>
+            </div>
+            <div class="faq">
+              <h3>How long does my money take to arrive from UAE to Africa?</h3>
+              <p>Yes, you can cancel your subscription at any time by logging into your account and selecting the cancel option.</p>
+            </div>
+            <div class="faq">
+              <h3>What payments method do you accept?</h3>
+              <p>Yes, you can cancel your subscription at any time by logging into your account and selecting the cancel option.</p>
+            </div>
+            <div class="faq">
+              <h3>Is Wire24 reliable?</h3>
+              <p>Yes, you can cancel your subscription at any time by logging into your account and selecting the cancel option.</p>
+            </div>
+          </section>   
 
-          <div class="services" id="contact" style="margin-top: 30px;">
+          <div class="services" id="contact" style="margin-top: 0px; background-color: #BB9239;">
             <div class="title">
-              <h1> <strong> CONTACT  </strong></h1>
-              <h2>Get in touch with us</h2>
+              <h1> <strong style="color: rgb(0, 100, 0);"> <b>Contact</b> </strong></h1>
+              <h2 style="color: rgb(0, 100, 0)">Get in touch with us</h2>
             </div>
             <div class="services-box">
-              <div class="box">
-                <img src="{% static 'images/location.png' %}" width="40%">
-                <h2>Address</h2>
-                <p>Kampala,Uganda</p>
-              </div>
-              <div class="box">
-                <img src="{% static 'images/phone.png' %}" width="40%">
+              <div class="boxe">
+                <img src="{% static 'images/phone.png' %}" width="20%">
                 <h2>Phone</h2>
-                <p>+255 767 9087</p>
-                <p>+254 876 8790</p>
-                <p>+11 87 8298</p>
-                <p>(543) 384 494</p>
+                <p><b>Technical Support:</b><b style="color: rgb(0, 100, 0);"> +254 738 173818</b></p>
+                <p><b>General Inquiries:</b><b style="color: rgb(0, 100, 0);">+254 721 1714</b></p>
+                <p><b>Sales: </b><b style="color: rgb(0, 100, 0);"> +254 712 8788</b></p>
               </div>
-              <div class="box">
-                <img src="{% static 'images/mail.png' %}" width="40%">
+              <div class="boxe">
+                <img src="{% static 'images/mail.png' %}" width="20%">
                 <h2>Email</h2>
-                <p>Wire24@gmail.com</p>
-                <p>Support.wire.co</p>
+                <p><b>Technical Support:</b><b style="color: rgb(0, 100, 0);"> Wire24.support.co </b></p>
+                <p><b>Billing:</b><b style="color: rgb(0, 100, 0);"> Wire24@gmail.com</b></p>
+                <p><b>Sales: </b><b style="color: rgb(0, 100, 0);"> Wire24.co.ug</b></p>
               </div>
             </div>
           </div>
-          </div>
-        
 
-          <footer class=" text-center text-white" style="background-color: #DD75FF;">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-              <!-- Section: Social media -->
+          <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <div class="container pt-4">
               <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-bs-ripple-color="dark">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-          
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-bs-ripple-color="dark">
                   <i class="fab fa-twitter"></i>
                 </a>
-          
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-bs-ripple-color="dark">
                   <i class="fab fa-google"></i>
                 </a>
-          
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-bs-ripple-color="dark">
                   <i class="fab fa-instagram"></i>
                 </a>
-          
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-bs-ripple-color="dark">
                   <i class="fab fa-linkedin"></i>
                 </a>
-          
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-bs-ripple-color="dark">
                   <i class="fab fa-github"></i>
                 </a>
               </section>
-              <!-- Section: Social media -->
             </div>
-            <!-- Grid container -->
-
-            <div>
-                <a href="{% url 'terms'%}">
-                    <p>Terms of services and privacy policy</p>
-                </a>
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              &copy; 2023. All rights reserved. Wire24
+             
             </div>
-          
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color:rgb(156, 55, 196);">
-              © 2023 Wire24
-            </div>
-            <!-- Copyright -->
-            
           </footer>
           
 
-          
+      
 
 
-          
+    
+
           
           
           <script src="{% static 'js/scripts.js' %}"></script>
