@@ -376,3 +376,14 @@ section {
   }
 }
 
+@media(max-width:483px){
+  .ton{
+    margin-bottom: 50px;
+  }
+
+}
+
+.faq h3 p{
+  font-size: 10px;
+}
+
