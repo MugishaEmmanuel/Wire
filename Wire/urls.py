@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls import handler404, handler500
+from django.contrib import admin
+from django.urls import path, include
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include('official.urls')),
 ]
+
+handler404 = 'official.views.error_404'
