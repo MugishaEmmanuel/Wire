@@ -7,7 +7,7 @@ body{
 
 .navbar{
   position: fixed;
-  background-color: #BB9239 ;
+  background-color: #351a5c ;
 }
 
 .navbar-brand{
@@ -138,7 +138,7 @@ button {
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
-  background-color: #E9CF9B;
+  background-color: #50C878;
   color: white;
   font-weight: Bold;
   transition: all 0.5s;
@@ -146,8 +146,8 @@ button {
 }
 
 button:hover {
-  background-color: #BB9239;
-  box-shadow: 0 0 20px rgb(0, 100, 0);
+  background-color: #FC94AF;
+  box-shadow: 0 0 20px #77b5fe;
 }
 
 button:active {
@@ -180,7 +180,7 @@ button:active {
 
 .title h2 {
   font-size: 24px;
-  color: #999;
+  
 }
 
 .services-box {
@@ -191,19 +191,20 @@ button:active {
 }
 
 .box {
-  background-color: #E9CF9B;
+  background-color: #77b5fe;
   border-radius: 10px;
   padding: 20px;
   flex-basis: calc(33.33% - 40px);
   margin: 0 20px 20px 0;
   text-align: center;
-  box-shadow: 0 0 10px rgb(0, 100, 0);
+  box-shadow: 0 0 20px #50C878;
   
 
 }
 
 .box h2 {
   margin-bottom: 10px;
+  
 }
 
 .box p {
@@ -235,7 +236,7 @@ button:active {
 .faq h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: rgb(0, 100, 0);
+  color: #50C878;
 }
 
 .faq p {
@@ -245,7 +246,7 @@ button:active {
 
 .faq-section h1{
   margin-top: 40px;
-  color: #BB9239;
+  color: #351a5c;
 }
 
 /*END of Frequently Asked Questions*/ 
@@ -389,6 +390,6 @@ section {
 
 
 .green-icon {
-  color: rgb(0, 100, 0);
+  color: #50C878;
 }
 
