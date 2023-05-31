@@ -197,7 +197,7 @@ button:active {
   flex-basis: calc(33.33% - 40px);
   margin: 0 20px 20px 0;
   text-align: center;
-  box-shadow: 0 0 20px #50C878;
+  box-shadow: 0 0 15px #50C878;
   
 
 }
