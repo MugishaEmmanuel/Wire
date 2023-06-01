@@ -24,14 +24,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-(xig@_l-)0yq0562bcl71d0ec#67p7j8t5wpb!t(2i@)k69@b3"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '192.168.88.95',
     '192.168.88.246',
     '192.168.88.71',
     '192.168.169.248',
-    '192.168.88.62'
+    '192.168.88.62',
+    '192.168.88.233',
+    '192.168.136.248',
 ]
 
 
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -130,6 +133,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+STATIC_ROOT = BASE_DIR/"staticfiles"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = '/images/'
 
